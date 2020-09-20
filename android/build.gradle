@@ -1,0 +1,44 @@
+group 'app.jffc.flutter_gmscheck'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'http://developer.huawei.com/repo/' }
+
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'http://developer.huawei.com/repo/' }    
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    
+    defaultConfig {
+        minSdkVersion 21
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+}
+dependencies {
+        implementation 'androidx.appcompat:appcompat:1.0.2'
+        implementation 'com.google.android.gms:play-services-base:17.4.0'
+        implementation "com.huawei.hms:hwid:4.0.0.300"
+
+}
+
+
