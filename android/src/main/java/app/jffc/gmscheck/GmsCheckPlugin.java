@@ -1,4 +1,4 @@
-package app.jffc.flutter_gmscheck;
+package app.jffc.gmscheck;
 
 import android.app.Activity;
 import android.content.Context;
@@ -29,7 +29,7 @@ import com.huawei.hms.api.HuaweiApiAvailability;
 
 
 
-public class FlutterGmsCheckPlugin implements FlutterPlugin, MethodCallHandler,ActivityAware {
+public class GmsCheckPlugin implements FlutterPlugin, MethodCallHandler,ActivityAware {
 
   private MethodChannel channel;
   private Context context;
@@ -40,7 +40,7 @@ public class FlutterGmsCheckPlugin implements FlutterPlugin, MethodCallHandler,A
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
     channel = new MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(),
-        "app.jffc/flutter_gmscheck");
+        "app.jffc/gmscheck");
     context = flutterPluginBinding.getApplicationContext();
     channel.setMethodCallHandler(this);
   }
@@ -48,9 +48,9 @@ public class FlutterGmsCheckPlugin implements FlutterPlugin, MethodCallHandler,A
   
   public static void registerWith(Registrar registrar) {
     final MethodChannel channel =
-        new MethodChannel(registrar.messenger(), "app.jffc/flutter_gmscheck");
+        new MethodChannel(registrar.messenger(), "app.jffc/gmscheck");
 
-    channel.setMethodCallHandler(new FlutterGmsCheckPlugin());
+    channel.setMethodCallHandler(new GmsCheckPlugin());
   }
 
   @Override
@@ -63,7 +63,7 @@ public class FlutterGmsCheckPlugin implements FlutterPlugin, MethodCallHandler,A
       case "checkGms":
         result.success(checkHms());
         break;
-      case "getsStoreName":
+      case "getStoreName":
         result.success(getStoreName());
         break;
       

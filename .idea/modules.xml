@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/flutter_gmscheck.iml" filepath="$PROJECT_DIR$/flutter_gmscheck.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/flutter_gmscheck_android.iml" filepath="$PROJECT_DIR$/android/flutter_gmscheck_android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example/android/flutter_gmscheck_example_android.iml" filepath="$PROJECT_DIR$/example/android/flutter_gmscheck_example_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gmscheck.iml" filepath="$PROJECT_DIR$/gmscheck.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/gmscheck_android.iml" filepath="$PROJECT_DIR$/android/gmscheck_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/android/gmscheck_example_android.iml" filepath="$PROJECT_DIR$/example/android/gmscheck_example_android.iml" />
     </modules>
   </component>
 </project>

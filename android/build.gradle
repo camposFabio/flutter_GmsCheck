@@ -1,4 +1,4 @@
-group 'app.jffc.flutter_gmscheck'
+group 'app.jffc.gmscheck'
 version '1.0'
 
 buildscript {

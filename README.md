@@ -1,4 +1,4 @@
-# flutter_gmscheck
+# gmscheck
 
 A new flutter plugin project.
 
